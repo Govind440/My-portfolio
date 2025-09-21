@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Govind Sharma Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    /* Custom LeetCode icon using SVG as fontawesome doesn't have official LeetCode icon */
+    .fa-leetcode {
+      width: 1em;
+      height: 1em;
+      display: inline-block;
+      fill: currentColor;
+      vertical-align: -0.125em;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-effects">
+    <div class="stars"></div>
+    <div class="moon"></div>
+    <div class="solar"></div>
+  </div>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#developer-tools">Developer Tools</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section about-section">
+      <div class="profile-image-container">
+        <img src="C:/Users/ptgov/OneDrive/Pictures/pic.jpg" alt="Govind Sharma" class="profile-image" />
+      </div>
+      <div class="about-text">
+        <h1>Govind Sharma</h1>
+        <p>
+          Pursuing MCA from KIET Group of Institution, Ghaziabad.<br />
+          Completed BCA from Institute of Applied Medicine & Research, Ghaziabad.
+        </p>
+        <p>
+          Passionate developer skilled in Frontend development, Python, MySQL, and Power BI.
+          Experienced with VS Code and Git/Github developer tools.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <h2>Skills</h2>
+      <div class="skills-buttons">
+        <button class="skill-btn" data-skill="frontend">
+          <i class="fa-solid fa-code"></i> Frontend
+        </button>
+        <button class="skill-btn" data-skill="python">
+          <i class="fa-brands fa-python"></i> Python
+        </button>
+        <button class="skill-btn" data-skill="mysql">
+          <i class="fa-solid fa-database"></i> MySQL
+        </button>
+        <button class="skill-btn" data-skill="powerbi">
+          <i class="fa-solid fa-chart-column"></i> Power BI
+        </button>
+        <button class="skill-btn" data-skill="java">
+          <i class="fa-brands fa-java"></i> Java
+        </button>
+        <button class="skill-btn" data-skill="datascientist">
+          <i class="fa-solid fa-chart-line"></i> Data Scientist
+        </button>
+       
+      
+      <div class="skill-certificate" id="certificate-frontend" style="display:none;">
+        <p>Frontend related certificate will be shown here.</p>
+      </div>
+      <div class="skill-certificate" id="certificate-python" style="display:none;">
+        <p>Python related certificate will be shown here.</p>
+      </div>
+      <div class="skill-certificate" id="certificate-mysql" style="display:none;">
+        <p>MySQL related certificate will be shown here.</p>
+      </div>
+      <div class="skill-certificate" id="certificate-powerbi" style="display:none;">
+        <p>Power BI related certificate will be shown here.</p>
+        <input type="file" id="powerbi-upload" accept=".pbix" style="display:none;" />
+        <button id="upload-powerbi-btn">Upload Power BI File</button>
+        <p id="powerbi-file-name"></p>
+        <a href="file:///C:/Users/ptgov/OneDrive/Documents/power%20bi%20files.pbix" target="_blank" id="open-powerbi-file" style="display:inline-block; margin-top:10px; padding:8px 12px; background-color:#0078d7; color:#fff; text-decoration:none; border-radius:4px;">Open Power BI File</a>
+      </div>
+      <div class="skill-certificate" id="certificate-java" style="display:none;">
+        <img src="C:/Users/ptgov/OneDrive/Pictures/java certificate.jpg" alt="Java Full Stack Certificate" />
+      </div>
+      <div class="skill-certificate" id="certificate-datascientist" style="display:none;">
+        <img src="C:/Users/ptgov/OneDrive/Pictures/Data Science certificate.jpg" alt="Full Stack Data Science Certificate" />
+      </div>
+      
+    </section>
+
+    <section id="developer-tools" class="section devtools-section">
+      <h2>Developer Tools</h2>
+      <ul class="devtools-list">
+        <li><i class="fa-brands fa-vscode"></i> VS Code</li>
+        <li><i class="fa-brands fa-github"></i> Git / GitHub</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>House Prediction</h3>
+        <p>An open project for house price prediction.</p>
+        <a href="https://github.com/Govind440/House-Prediction/issues/1" target="_blank" class="project-link">
+          View Project on GitHub
+        </a>
+      </div>
+    </section>
+
+    
+
+    <section id="contact" class="section contact-section">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>
+          <i class="fa-brands fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/govind-sharma-252578287/" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-github"></i>
+          <a href="https://github.com/Govind440" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <svg class="fa-leetcode" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 2L2 7v10l10 5 10-5V7l-10-5zm0 2.18l7.5 3.75v6.14L12 17.82 4.5 14.07V7.93L12 4.18zM11 9v6h2V9h-2z"/>
+          </svg>
+          <a href="https://leetcode.com/u/Govind2003/" target="_blank">LeetCode</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:ptgovind47@gmail.com">ptgovind47@gmail.com</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
